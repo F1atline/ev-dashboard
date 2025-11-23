@@ -147,9 +147,9 @@ const initAppFactory = (centralServerService: CentralServerService, configServic
               language = loggedUser.language;
             }
             // Init Translate service
-            translateService.addLangs(['en', 'fr', 'es', 'de', 'pt', 'it', 'cs']);
+            translateService.addLangs(['en', 'ru', 'fr', 'es', 'de', 'pt', 'it', 'cs']);
             translateService.setDefaultLang('en');
-            translateService.use(language.match(/en|fr|es|de|pt|it|cs/) ? language : 'en');
+            translateService.use(language.match(/en|ru|fr|es|de|pt|it|cs/) ? language : 'en');
             // Init Done
             observer.complete();
           },
