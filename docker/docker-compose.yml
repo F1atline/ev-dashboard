@@ -11,6 +11,6 @@ services:
             args:
                 build: prod
         ports:
-            - 3080:80
+            - 80:80
         networks:
             - ev_network
